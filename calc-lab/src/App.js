@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Calulator from './components/Calculator'
 
 function App() {
   return (
@@ -7,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+            <Calulator />
         </p>
         <a
           className="App-link"
