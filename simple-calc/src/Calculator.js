@@ -11,6 +11,7 @@ class Calculator extends Component {
   }
 
 
+
   render() {
     return (
       <div className="container">
@@ -31,7 +32,7 @@ class Calculator extends Component {
             value={this.state.num2}
             onChange={(e) => this.setNum(e, "num2")}
           />
-          <button onClick>={this.setNum}</button>
+          <button onClick>={() => this.setNum}</button>
           <h3>{parseInt(this.state.num1) + parseInt(this.state.num2)}</h3>
         </div>
       </div>
