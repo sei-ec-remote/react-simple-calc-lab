@@ -23,11 +23,10 @@ class Calculator extends Component {
   }
 
   setOperation = (event) => {
-    const PERMITTED_OPERATIONS = ["+", "-", "*", "x", "/", "^"];
+    const PERMITTED_OPERATIONS = ["+", "-", "*", "x", "/", "^", ""];
     const newOperation = event.target.value;
 
-    if (!PERMITTED_OPERATIONS.includes(newOperation)
-        && newOperation !== "") {
+    if (!PERMITTED_OPERATIONS.includes(newOperation)) {
       alert("You must enter a valid mathematical operation!");
       return;
     }
